@@ -5,18 +5,23 @@
   box-sizing: border-box;
 }
 
-body {
-  min-width: 90%;
+body{
   font-family: "Raleway", sans-serif;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+}
+
+.content{
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
 }
 
 section {
   display: flex;
   align-items: center;
-  justify-content: center;
 
+  scroll-snap-align: start;
+  justify-content: center;
   min-height: 100vh;
 }
 
@@ -29,5 +34,15 @@ section {
   background-attachment: fixed;
 
   color: aliceblue;
-  font-size: 4rem;
+  font-size: 4em;
+}
+
+/*En esta sección describiremos la pagina web y lo que nos muestra*/
+.descrip {
+  background-color: aqua;
+}
+
+/*En esta sección pondremos los datos del dia de hoy*/
+.today {
+  background-color: red;
 }
