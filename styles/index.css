@@ -17,15 +17,17 @@ html, body{
 }
 
 section {
-  display: flex;
-  
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   scroll-snap-align: start;
 }
 
 .welcome {
+  /*Flex properties*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
   background-size: cover;
@@ -37,16 +39,19 @@ section {
 
 /*En esta sección describiremos la pagina web y lo que nos muestra*/
 .description {
+   /*Flex properties*/
   display: flex;
-  justify-content: space-around;
-  color: black;
-}
+  justify-content: space-between;
 
-.column {
-  background-color: blanchedalmond;
+  width: 60%;
+  height: 40%;
+  font-size: 0.6em;
 }
 
 /*En esta sección pondremos los datos del dia de hoy*/
 .today {
+   /*Flex properties*/
+   
+
   background-color: red;
 }
