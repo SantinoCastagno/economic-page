@@ -19,12 +19,13 @@ body{
 section {
   display: flex;
   align-items: center;
-
   scroll-snap-align: start;
   justify-content: center;
+  
+}
+.fullSection{
   min-height: 100vh;
 }
-
 .welcome {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
@@ -32,7 +33,7 @@ section {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-
+flex-direction: column;
   color: aliceblue;
   font-size: 4em;
 }
@@ -45,4 +46,45 @@ section {
 /*En esta sección pondremos los datos del dia de hoy*/
 .today {
   background-color: red;
+}
+
+ th {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: lightseagreen;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.history{
+  flex-direction: column;
+}
+table{
+  width: 60vw;
+
+}
+li {
+  display: inline;
+  background-color: lightskyblue;
+ padding-right: 1rem;
+ padding-left: 1rem;
+  min-width: 20vw;
+ 
+
+  
+}
+ul{
+  text-align: center;
+  
+ 
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
