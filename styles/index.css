@@ -17,10 +17,16 @@ html, body{
 }
 
 section {
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  justify-content: center;
+  
+}
+.fullSection{
   min-height: 100vh;
   scroll-snap-align: start;
 }
-
 .welcome {
   /*Flex properties*/
   display: flex;
@@ -33,6 +39,8 @@ section {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+flex-direction: column;
+  color: aliceblue;
   font-size: 4em;
   height: 100vh;
 }
@@ -54,4 +62,49 @@ section {
    
 
   background-color: red;
+}
+
+ th {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-collapse: collapse;
+  
+}
+
+thead {
+  background-color: lightseagreen;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.history{
+  flex-direction: column;
+}
+table{
+  width: 60vw;
+
+}
+li {
+  display: inline;
+  background-color: lightskyblue;
+ padding-right: 1rem;
+ padding-left: 1rem;
+  min-width: 20vw;
+ 
+
+  
+}
+ul{
+  text-align: center;
+  
+ 
+}
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+tbody{
+  background-color: lightslategrey;
 }
