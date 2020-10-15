@@ -1,19 +1,19 @@
 /*Para estandarizar los valores en los distintos navegadores*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body{
+html, body{
   font-family: "Raleway", sans-serif;
-  margin: 0;
+  color: #fff;
 }
 
 .content{
-  scroll-snap-type: y mandatory;
-  overflow: scroll;
   height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -25,26 +25,42 @@ section {
 }
 .fullSection{
   min-height: 100vh;
+  scroll-snap-align: start;
 }
 .welcome {
+  /*Flex properties*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
   background-attachment: fixed;
 flex-direction: column;
   color: aliceblue;
   font-size: 4em;
+  height: 100vh;
 }
 
 /*En esta sección describiremos la pagina web y lo que nos muestra*/
-.descrip {
-  background-color: aqua;
+.description {
+   /*Flex properties*/
+  display: flex;
+  justify-content: space-between;
+
+  width: 60%;
+  height: 40%;
+  font-size: 0.6em;
 }
 
 /*En esta sección pondremos los datos del dia de hoy*/
 .today {
+   /*Flex properties*/
+   
+
   background-color: red;
 }
 
@@ -52,6 +68,7 @@ flex-direction: column;
   border: 1px solid black;
   padding: 0.5rem;
   border-collapse: collapse;
+  
 }
 
 thead {
@@ -87,4 +104,7 @@ ul{
 }
 a:link, a:visited, a:active {
   text-decoration:none;
+}
+tbody{
+  background-color: lightslategrey;
 }
