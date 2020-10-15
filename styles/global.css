@@ -5,15 +5,9 @@
   padding: 0;
 }
 
-html, body{
+body {
   font-family: "Raleway", sans-serif;
   color: #fff;
-}
-
-.content{
-  height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -21,54 +15,20 @@ section {
   align-items: center;
   scroll-snap-align: start;
   justify-content: center;
-  
-}
-.fullSection{
   min-height: 100vh;
   scroll-snap-align: start;
-}
-.welcome {
-  /*Flex properties*/
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-flex-direction: column;
-  color: aliceblue;
-  font-size: 4em;
-  height: 100vh;
 }
 
-/*En esta sección describiremos la pagina web y lo que nos muestra*/
-.description {
-   /*Flex properties*/
-  display: flex;
-  justify-content: space-between;
-
-  width: 60%;
-  height: 40%;
-  font-size: 0.6em;
-}
-
-/*En esta sección pondremos los datos del dia de hoy*/
-.today {
-   /*Flex properties*/
-   
-
-  background-color: red;
-}
-
- th {
+th {
   border: 1px solid black;
   padding: 0.5rem;
   border-collapse: collapse;
-  
 }
 
 thead {
@@ -80,31 +40,67 @@ h2 {
   margin: 1rem;
 }
 
-.history{
-  flex-direction: column;
-}
-table{
+table {
   width: 60vw;
-
 }
+
 li {
   display: inline;
   background-color: lightskyblue;
- padding-right: 1rem;
- padding-left: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   min-width: 20vw;
- 
+}
 
-  
-}
-ul{
+ul {
   text-align: center;
-  
- 
 }
-a:link, a:visited, a:active {
-  text-decoration:none;
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
 }
-tbody{
+
+tbody {
   background-color: lightslategrey;
 }
+
+.content {
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.welcome {
+  /*Flex properties*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  flex-direction: column;
+  color: aliceblue;
+  font-size: 2.5rem;
+  height: 100vh;
+}
+
+.welcome .title, .welcome p{
+  padding: 10vh 10vw;
+}
+
+.welcome p{
+  padding: 30vh ;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history {
+  flex-direction: column;
+}
+
+
