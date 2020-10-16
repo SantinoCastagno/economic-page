@@ -5,24 +5,29 @@
   padding: 0;
 }
 
-body {
+html, body {
   font-family: "Raleway", sans-serif;
   color: #fff;
+  letter-spacing: 1px;
 }
 
-section {
+header {
   display: flex;
   align-items: center;
   scroll-snap-align: start;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   scroll-snap-align: start;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+table {
+  margin-top: 3%;
 }
 
 th {
@@ -32,21 +37,34 @@ th {
 }
 
 thead {
-  background-color: lightseagreen;
+  background-color: #2980b9;
 }
 
 h2 {
   text-align: center;
   margin: 1rem;
+  color: #1d5a81;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color:#1d5a81;
+  content: " ";
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 table {
-  width: 60vw;
+  width: 75vw;
 }
 
 li {
   display: inline;
-  background-color: lightskyblue;
+  background-color: #2980b9;
   padding-right: 1rem;
   padding-left: 1rem;
   min-width: 20vw;
@@ -56,51 +74,90 @@ ul {
   text-align: center;
 }
 
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
 
 tbody {
-  background-color: lightslategrey;
+  background-color: #1d5a81;
 }
 
-.content {
-  height: 100vh;
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-}
 
 .welcome {
-  /*Flex properties*/
+  font-size: 2.3rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
-
-  flex-direction: column;
-  color: aliceblue;
-  font-size: 2.5rem;
-  height: 100vh;
+  text-align: center;
 }
 
-.welcome .title, .welcome p{
-  padding: 10vh 10vw;
-}
-
-.welcome p{
-  padding: 30vh ;
-}
 
 .title{
+  margin-top: 10%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.title h3 {
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 
 .history {
   flex-direction: column;
 }
 
+.btn-historic {
+  background-color: #1d5a81;
+  border-radius: 200px;
+  border: 1px solid  #1d5a81;
+  color: #fff;
+  padding: 1% 2%;
+  text-decoration: none;
+}
+
+.today {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: 100vh;
+}
+
+
+.history {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.history ul {
+  padding-bottom: 3%;
+}
+
+@media (max-width: 900px) {
+
+  header h1 {
+    font-size: 7vw;
+  }
+
+  header h3 {
+    font-size: 4vw;
+  }
+
+  .btn-historic {
+    font-size: 4vw;
+  }
+
+  .welcome {
+    justify-content: center;
+  }
+
+  header, section {
+    height: 60vh;
+  }
+
+}
 
