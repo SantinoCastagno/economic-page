@@ -1,4 +1,7 @@
-/*Para estandarizar los valores en los distintos navegadores*/
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +13,58 @@ html, body {
   color: #fff;
   letter-spacing: 1px;
 }
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONETNS */
+/* ----------------------------------------------- */
+
+h2 {
+  text-align: center;
+  margin: 1rem;
+  color: #1d5a81;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+}
+
+h1:after, h2:after {
+  display: block;
+  height: 2px;
+  background-color:#1d5a81;
+  content: " ";
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #1d5a81;
+  border-radius: 200px;
+  border: 1px solid  #1d5a81;
+  color: #fff;
+  padding: 1% 2%;
+  text-decoration: none;
+
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: #0d2a3c;
+  border: 1px solid #0d2a3c;
+}
+
+.btn-historic {
+  padding: 1% 2%;
+}
+
+.btn-full {
+  margin-right: 10%;
+  padding: 5% 5%;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
 
 header {
   display: flex;
@@ -26,8 +81,13 @@ header {
   background-attachment: fixed;
 }
 
+/* ----------------------------------------------- */
+/* TABLE */
+/* ----------------------------------------------- */
+
 table {
   margin-top: 3%;
+  width: 75vw;
 }
 
 th {
@@ -40,45 +100,14 @@ thead {
   background-color: #2980b9;
 }
 
-h2 {
-  text-align: center;
-  margin: 1rem;
-  color: #1d5a81;
-  font-size: 2.3rem;
-  letter-spacing: 2px;
-}
-
-h2:after {
-  display: block;
-  height: 2px;
-  background-color:#1d5a81;
-  content: " ";
-  width: 35%;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-
-table {
-  width: 75vw;
-}
-
-li {
-  display: inline;
-  background-color: #2980b9;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  min-width: 20vw;
-}
-
-ul {
-  text-align: center;
-}
-
 
 tbody {
   background-color: #1d5a81;
 }
 
+/* ----------------------------------------------- */
+/* INDEX */
+/* ----------------------------------------------- */
 
 .welcome {
   font-size: 2.3rem;
@@ -101,19 +130,6 @@ tbody {
   padding-top: 5%;
 }
 
-.history {
-  flex-direction: column;
-}
-
-.btn-historic {
-  background-color: #1d5a81;
-  border-radius: 200px;
-  border: 1px solid  #1d5a81;
-  color: #fff;
-  padding: 1% 2%;
-  text-decoration: none;
-}
-
 .today {
   align-items: center;
   display: flex;
@@ -122,6 +138,10 @@ tbody {
   padding-bottom: 5%;
   height: 100vh;
 }
+
+/* ----------------------------------------------- */
+/* RECORD // OLD */
+/* ----------------------------------------------- */
 
 
 .history {
@@ -137,26 +157,20 @@ tbody {
   padding-bottom: 3%;
 }
 
-@media (max-width: 900px) {
+.btn-container {
+  display: flex;
+}
 
-  header h1 {
-    font-size: 7vw;
-  }
+/* ----------------------------------------------- */
+/* MEDIA */
+/* ----------------------------------------------- */
 
-  header h3 {
-    font-size: 4vw;
-  }
-
-  .btn-historic {
-    font-size: 4vw;
-  }
+@media (max-width: 768px) {
 
   .welcome {
     justify-content: center;
-  }
-
-  header, section {
-    height: 60vh;
+    font-size: 1.5rem;
+    padding: 1% 2%;
   }
 
 }
