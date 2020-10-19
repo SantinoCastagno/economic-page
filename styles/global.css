@@ -94,14 +94,15 @@ header {
 
 table {
   margin-top: 3%;
-  width: 75vw;
+  width: 60%;
 }
 
 th {
   border: 1px solid black;
   padding: 0.5rem;
   border-collapse: collapse;
-  width: 50%;
+  /* width: 50%; */
+  width: 33.3%;
 }
 
 thead {
@@ -162,10 +163,10 @@ tbody {
 /* Cards */
 
 .more-dollars {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  width: 90vw;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .more-dollars .card {
@@ -244,6 +245,7 @@ tbody {
   font-size: 2rem;
 }
 
+
 .more-dollars .card .face.face2 {
   position: relative;
   display: flex;
@@ -294,17 +296,32 @@ tbody {
   display: flex;
 }
 
+.th-history {
+  width: 33.3%;
+}
+
 /* ----------------------------------------------- */
 /* MEDIA */
 /* ----------------------------------------------- */
 
-@media (max-width: 1400px) {
+@media (max-width: 1220px) {
 
-  .more-dolars{
-    width: 4;
+  .welcome {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .card {
+    flex-basis: 50%;
+  }
+
+  .face {
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
+
 
 @media (max-width: 768px) {
 
@@ -314,5 +331,8 @@ tbody {
     padding: 1% 2%;
   }
 
-}
+  .card {
+    flex-basis: 100%;
+  }
 
+}
