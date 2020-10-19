@@ -79,7 +79,6 @@ header {
   scroll-snap-align: start;
   justify-content: center;
   height: 100vh;
-  scroll-snap-align: start;
 
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
@@ -141,9 +140,21 @@ tbody {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 5%;
-  padding-bottom: 5%;
   height: 100vh;
+}
+
+.today h2{
+  padding-top: 5vh;
+  font-size: 3rem;
+}
+
+.today table{
+  margin-bottom: 2vh;
+}
+
+.today table th, .today table tr{
+  padding: 2vh 0;
+  font-size: 1.5rem;
 }
 
 /* Cards */
@@ -181,12 +192,7 @@ tbody {
 }
 
 .more-dolars .card .face.face1 .content {
-  opacity: 0.2;
   transition: 0.5s;
-}
-
-.more-dolars .card:hover .face.face1 .content {
-  opacity: 1;
 }
 
 .more-dolars .card .face.face1 .content h4{
@@ -194,7 +200,7 @@ tbody {
   padding: 0;
   color: #fff;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .more-dolars .card .face.face2 {
@@ -218,9 +224,9 @@ tbody {
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #2980b9;
+  color: black;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-family: "dancing script";
   font-weight: bold;
 }
