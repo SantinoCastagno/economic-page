@@ -101,7 +101,6 @@ th {
   border: 1px solid black;
   padding: 0.5rem;
   border-collapse: collapse;
-  /* width: 50%; */
   width: 33.3%;
 }
 
@@ -174,8 +173,9 @@ tbody {
 }
 
 .more-dollars .card .face{
-  width: 300px;
-  height: 200px;
+  cursor: pointer;
+  width: 18.75rem;
+  height: 12.5rem;
   transition: 0.5s;
 }
 
@@ -187,7 +187,6 @@ tbody {
   z-index: 1;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
   transform: translateY(100px);
 }
@@ -231,6 +230,8 @@ tbody {
 
 .more-dollars .card:hover .face.face1 {
   transform: translateY(0px);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: #fff;
 }
 
 .more-dollars .card .face.face1 .content {
@@ -243,6 +244,7 @@ tbody {
   color: #fff;
   text-align: center;
   font-size: 2rem;
+
 }
 
 
@@ -306,10 +308,6 @@ tbody {
 
 @media (max-width: 1220px) {
 
-  .welcome {
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
 
   .card {
     flex-basis: 50%;
