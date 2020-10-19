@@ -39,7 +39,8 @@ h1:after, h2:after {
   background-color:#1d5a81;
   content: " ";
   width: 30%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
 }
 
@@ -100,6 +101,7 @@ th {
   border: 1px solid black;
   padding: 0.5rem;
   border-collapse: collapse;
+  width: 50%;
 }
 
 thead {
@@ -159,24 +161,24 @@ tbody {
 
 /* Cards */
 
-.more-dolars {
+.more-dollars {
   position: relative;
   display: flex;
   justify-content: space-between;
   width: 90vw;
 }
 
-.more-dolars .card {
+.more-dollars .card {
   position: relative;
 }
 
-.more-dolars .card .face{
+.more-dollars .card .face{
   width: 300px;
   height: 200px;
   transition: 0.5s;
 }
 
-.more-dolars .card .face.face1 {
+.more-dollars .card .face.face1 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -189,52 +191,52 @@ tbody {
   transform: translateY(100px);
 }
 
-.more-dolars .card:nth-child(1) .face.face1 {
+.more-dollars .card:nth-child(1) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(1):hover .face.face1 {
+.more-dollars .card:nth-child(1):hover .face.face1 {
   background-image: url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
   transform: translateY(0px);
 }
 
-.more-dolars .card:nth-child(2) .face.face1 {
+.more-dollars .card:nth-child(2) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(2):hover .face.face1 {
+.more-dollars .card:nth-child(2):hover .face.face1 {
   background-image: url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(3) .face.face1 {
+.more-dollars .card:nth-child(3) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(3):hover .face.face1 {
+.more-dollars .card:nth-child(3):hover .face.face1 {
   background-image: url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(4) .face.face1 {
+.more-dollars .card:nth-child(4) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
     url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
 }
 
-.more-dolars .card:nth-child(4):hover .face.face1 {
+.more-dollars .card:nth-child(4):hover .face.face1 {
   background-image: url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
 }
 
-.more-dolars .card:hover .face.face1 {
+.more-dollars .card:hover .face.face1 {
   transform: translateY(0px);
 }
 
-.more-dolars .card .face.face1 .content {
+.more-dollars .card .face.face1 .content {
   transition: 0.5s;
 }
 
-.more-dolars .card .face.face1 .content h4{
+.more-dollars .card .face.face1 .content h4{
   margin: 10px 0 0;
   padding: 0;
   color: #fff;
@@ -242,7 +244,7 @@ tbody {
   font-size: 2rem;
 }
 
-.more-dolars .card .face.face2 {
+.more-dollars .card .face.face2 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -255,11 +257,11 @@ tbody {
   transform: translateY(-100px);
 }
 
-.more-dolars .card:hover .face.face2{
+.more-dollars .card:hover .face.face2{
   transform: translateY(0px);
 }
 
-.more-dolars .card .face.face2 .content p{
+.more-dollars .card .face.face2 .content p{
   margin: 0;
   padding: 0;
   background: #fff;
