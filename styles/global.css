@@ -149,7 +149,7 @@ tbody {
 }
 
 .today table{
-  margin-bottom: 2vh;
+  margin: 3vh 0;
 }
 
 .today table th, .today table tr{
@@ -182,12 +182,51 @@ tbody {
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background: #333;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   transform: translateY(100px);
 }
 
+.more-dolars .card:nth-child(1) .face.face1 {
+  background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
+    url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(1):hover .face.face1 {
+  background-image: url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
+  transform: translateY(0px);
+}
+
+.more-dolars .card:nth-child(2) .face.face1 {
+  background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
+    url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(2):hover .face.face1 {
+  background-image: url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(3) .face.face1 {
+  background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
+    url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(3):hover .face.face1 {
+  background-image: url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(4) .face.face1 {
+  background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
+    url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
+}
+
+.more-dolars .card:nth-child(4):hover .face.face1 {
+  background-image: url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
+}
+
 .more-dolars .card:hover .face.face1 {
-  background: #1d5a81;
   transform: translateY(0px);
 }
 
@@ -256,6 +295,14 @@ tbody {
 /* ----------------------------------------------- */
 /* MEDIA */
 /* ----------------------------------------------- */
+
+@media (max-width: 1400px) {
+
+  .more-dolars{
+    width: 4;
+  }
+
+}
 
 @media (max-width: 768px) {
 
