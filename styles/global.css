@@ -1,4 +1,11 @@
 /* ----------------------------------------------- */
+/* Color Constants to design */
+/* Primary Color: #1d5a81 */
+/* Secondary Color: #2980b9 */
+/* ----------------------------------------------- */
+
+
+/* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
 
@@ -15,7 +22,7 @@ html, body {
 }
 
 /* ----------------------------------------------- */
-/* REUSABLE COMPONETNS */
+/* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
 
 h2 {
@@ -131,12 +138,91 @@ tbody {
 }
 
 .today {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding-top: 5%;
   padding-bottom: 5%;
   height: 100vh;
+}
+
+/* Cards */
+
+.more-dolars {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+.more-dolars .card {
+  position: relative;
+}
+
+.more-dolars .card .face{
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.more-dolars .card .face.face1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: #333;
+  transform: translateY(100px);
+}
+
+.more-dolars .card:hover .face.face1 {
+  background: #1d5a81;
+  transform: translateY(0px);
+}
+
+.more-dolars .card .face.face1 .content {
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.more-dolars .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.more-dolars .card .face.face1 .content h4{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.more-dolars .card .face.face2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  background: #fff;
+
+  transform: translateY(-100px);
+}
+
+.more-dolars .card:hover .face.face2{
+  transform: translateY(0px);
+}
+
+.more-dolars .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #2980b9;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "dancing script";
+  font-weight: bold;
 }
 
 /* ----------------------------------------------- */

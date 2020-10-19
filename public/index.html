@@ -7,40 +7,92 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link href="../styles/global.css" rel="stylesheet" />
     <title>Economic Page</title>
   </head>
 
   <body>
+    <header class="welcome">
+      <div class="title">
+        <h1>Estadísticas del BCRA</h1>
+        <h3>Consultá la cotización del dólar</h3>
+        <a class="btn btn-historic" href="record.html">HISTÓRICO</a>
+      </div>
+    </header>
 
-      <header class="welcome">
-        <div class="title">
-          <h1>Estadísticas del BCRA</h1>
-          <h3>Consultá la cotización del dólar</h3>
-          <a class="btn btn-historic" href="record.html">HISTÓRICO</a>
+    <section class="today">
+      <h2>DATOS DE HOY</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>$ 75.45</th>
+            <th>$ 80.45</th>
+          </tr>
+        </tbody>
+      </table>
+      <div class="more-dolars">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dolar Blue</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>COMPRA: $172,00</p>
+              <p>VENTA: $178,00</p>
+            </div>
+          </div>
         </div>
-
-      </header>
-
-      <section class="today">
-        <h2>DATOS DE HOY</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fecha</th>
-              <th>Compra</th>
-              <th>Venta</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>30-09-20</th>
-              <th>$ 75.45</th>
-              <th>$ 80.45</th>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dólar Bolsa</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>COMPRA: $152,17</p>
+              <p>VENTA: $152,47</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Contado con Liquidación</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>COMPRA: $165,23</p>
+              <p>VENTA: $162,72</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dólar Solidario</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>VENTA: $136,13</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
