@@ -94,6 +94,7 @@ header {
 
 table {
   margin-top: 3%;
+  margin-bottom: 3%;
   width: 60%;
 }
 
@@ -142,7 +143,8 @@ tbody {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 2%;
 }
 
 .today h2{
@@ -247,7 +249,6 @@ tbody {
 
 }
 
-
 .more-dollars .card .face.face2 {
   position: relative;
   display: flex;
@@ -274,6 +275,23 @@ tbody {
   font-size: 1.9rem;
   font-family: "dancing script";
   font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  align-items: center;
+  background-color: #071620;
+  display: flex;
+  justify-content: center;
+  height: 5em;
+  text-align: center;
+  width: 100%;
+    
+}
+
+footer p {
+  margin-right: 3%;
 }
 
 /* ----------------------------------------------- */
