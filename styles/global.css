@@ -153,11 +153,11 @@ tbody {
 }
 
 .today table{
-  margin: 3vh 0;
+  margin: 4vh 0;
 }
 
 .today table th, .today table tr{
-  padding: 2vh 0;
+  padding: 3vh 0;
   font-size: 1.5rem;
 }
 
