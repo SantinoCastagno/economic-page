@@ -56,20 +56,14 @@ h1:after, h2:after {
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
+.btn-historic{
+  font-size: 1.5rem;
+}
+
 .btn:hover {
   background-color: #0d2a3c;
   border: 1px solid #0d2a3c;
 }
-
-.btn-historic {
-  padding: 1% 2%;
-}
-
-.btn-full {
-  margin-right: 10%;
-  padding: 5% 5%;
-}
-
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -310,10 +304,6 @@ footer p {
 
 .history ul {
   padding-bottom: 3%;
-}
-
-.btn-container {
-  display: flex;
 }
 
 .th-history {
