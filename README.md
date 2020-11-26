@@ -1,4 +1,4 @@
-# economic-page
+# ECONOMIC-PAGE
 
 _A page to consult the price of the dollar in Argentina._
 
