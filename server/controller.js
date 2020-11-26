@@ -19,6 +19,16 @@ router.get('/get/value/:id',  (req, res) => {
   }
 });
 
+// Get all the values
+router.get('/getAll/values',(req, res) => {
+
+  if(data.historic.length > 10) {
+    res.json(data.historic.slice(data.historic.length-10, data.historic.length));
+  } else {
+    res.json(data.historic);
+  }
+
+});
 
 // Get values with limit and from options
 router.get('/get/values', [
@@ -40,8 +50,8 @@ router.get('/get/values', [
 
 // Create new Value
 router.post('/load/value', [
-  query('buy').isInt(),
-  query('sell').isInt()
+  query('buy').isFloat(),
+  query('sell').isFloat()
 ] , (req, res) => {
 
       const errors = validationResult(req);
@@ -52,8 +62,8 @@ router.post('/load/value', [
       const newHistoricValue = {
         "id": data.historic.length,
         "fecha": `${moment().format('DD-MM-YYYY')}`,
-        "compra": req.query.buy,
-        "venta": req.query.sell,
+        "compra": `$${req.query.buy}`,
+        "venta": `$${req.query.sell}`,
       };
 
       data.historic.push(newHistoricValue);
