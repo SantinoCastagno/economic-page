@@ -21,7 +21,7 @@ npm install
 * [CSS]
 * [JAVASCRIPT]
 
-## Autores ✒️
+## Authors ✒️
 
 * **Conchillo Mariano** 
 * **Castagno Santino** 
