@@ -1,5 +1,26 @@
-const value = "<tr> <th>12-10-20</th> <th>$ 76.25</th> <th>$ 82.25</th> </tr>";
+const getValues = async() => {
+    const url = 'http://localhost:3000/api/getAll/values';
+    const resp = await fetch( url);
+    const data  = await resp.json();
+    return data;
+}
 
-var nic = document.getElementsByClassName('table-content'); 
+const table = document.querySelector('.table-content');
 
-console.log(nic);
+getValues().then(data => {
+    data.forEach(value => {
+        let tr = document.createElement('tr');
+        let th1 = document.createElement('th');
+        th1.textContent = value.fecha;
+        tr.appendChild(th1);
+        let th2 = document.createElement('th');
+        th2.textContent = value.compra;
+        tr.appendChild(th2);
+        let th3 = document.createElement('th');
+        th3.textContent = value.venta;
+        tr.appendChild(th3);
+
+        table.appendChild(tr);
+    })
+});
+

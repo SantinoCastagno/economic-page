@@ -76,7 +76,7 @@ header {
   height: 100vh;
 
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
-    url(/assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg);
+    url('../assets/steve-johnson-WVUrbhWtRNM-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -189,39 +189,39 @@ tbody {
 
 .more-dollars .card:nth-child(1) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
-    url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
+    url('../assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(1):hover .face.face1 {
-  background-image: url(/assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg);
+  background-image: url('../assets/pierre-herman-sJ1Bv_yCovk-unsplash.jpg');
   transform: translateY(0px);
 }
 
 .more-dollars .card:nth-child(2) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
-    url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
+    url('../assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(2):hover .face.face1 {
-  background-image: url(/assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg);
+  background-image: url('../assets/manuel-marin-ig1cLNF0M-M-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(3) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
-    url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
+    url('../assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(3):hover .face.face1 {
-  background-image: url(/assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg);
+  background-image: url('../assets/madison-kaminski-5fd2jdyGo-8-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(4) .face.face1 {
   background-image: linear-gradient(rgba(4, 13, 18, 0.85),rgba(4, 13, 18, 0.85)),
-    url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
+    url('../assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg');
 }
 
 .more-dollars .card:nth-child(4):hover .face.face1 {
-  background-image: url(/assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg);
+  background-image: url('../assets/adam-gonzales-A2MkCqYrSUw-unsplash.jpg');
 }
 
 .more-dollars .card:hover .face.face1 {
@@ -281,7 +281,6 @@ footer {
   height: 5em;
   text-align: center;
   width: 100%;
-    
 }
 
 footer p {
@@ -300,6 +299,8 @@ footer p {
 
   padding-top: 5%;
   justify-content: center;
+
+  min-height: 100vh;
 }
 
 .history ul {
