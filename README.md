@@ -1,3 +1,3 @@
 # economic-page
-## Instalaciones necesarias:
+**Instalaciones necesarias:**
 - npm install (módulos de Node)
