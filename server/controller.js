@@ -9,7 +9,7 @@ const data = require('./data.json');
 
 //Routes
 // Get Value by ID
-router.get('/get/value/:id',  (req, res) => {
+router.get('/value/:id',  (req, res) => {
   const found = data.historic.some(value => value.id === parseInt(req.params.id));
 
   if(found){
@@ -31,7 +31,7 @@ router.get('/getAll/values',(req, res) => {
 });
 
 // Get values with limit and from options
-router.get('/get/values', [
+router.get('/values', [
   query('limit').isInt({ min: 0, max: data.historic.length }),
   query('from').isInt({ min: 0, max: data.historic.length })
 ], (req, res) => {
@@ -41,15 +41,15 @@ router.get('/get/values', [
     return res.status(400).json({ errors: errors.array() });
   }
 
-  limit = req.query.limit;
-  from = req.query.from;
+  const limit = req.query.limit;
+  const from = req.query.from;
 
   res.json(data.historic.slice(from, limit));
 
 });
 
 // Create new Value
-router.post('/load/value', [
+router.post('/value', [
   query('buy').isFloat(),
   query('sell').isFloat()
 ] , (req, res) => {
@@ -68,11 +68,12 @@ router.post('/load/value', [
 
       data.historic.push(newHistoricValue);
 
+      //corregir
       fs.writeFile("./data.json", JSON.stringify(data), err => {
         if (err) console.log("Error updating file:",err)
       })
 
-    res.json(data.historic);
+    res.json(newHistoricValue);
 
 });
 
