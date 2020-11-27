@@ -10,10 +10,10 @@ const data = require('./data.json');
 //Routes
 // Get Value by ID
 router.get('/value/:id',  (req, res) => {
-  const found = data.historic.some(value => value.id === parseInt(req.params.id));
+  const found = data.historic.filter(value => value.id === parseInt(req.params.id));
 
-  if(found){
-    res.json(data.historic.filter(value => value.id === parseInt(req.params.id)));
+  if(found.length > 0){
+    res.json(found[0]);
   } else {
     res.status(404).json({ msg: `No Value with the id of ${ req.params.id }` });
   }
@@ -69,9 +69,11 @@ router.post('/value', [
       data.historic.push(newHistoricValue);
 
       //corregir
-      fs.writeFile("./data.json", JSON.stringify(data), err => {
-        if (err) console.log("Error updating file:",err)
-      })
+      try{
+        fs.writeFileSync("./data.json", JSON.stringify(data));
+      } catch(err) {
+        console.log(err);
+      }
 
     res.json(newHistoricValue);
 
