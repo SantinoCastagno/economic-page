@@ -15,11 +15,11 @@ _Node.Js Modules_
 npm install
 ```
 
-## Built with 🛠️
+## built with the following modules 🛠️
 
-* [HTML]
-* [CSS]
-* [JAVASCRIPT]
+* [Express](https://expressjs.com/) - Framework to built REST API
+* [Moment.js](https://momentjs.com/) - To display dates and times
+* [Sweetalert2](https://sweetalert2.github.io/) - Used to have beautiful and predefined alerts
 
 ## Authors ✒️
 

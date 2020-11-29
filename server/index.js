@@ -7,7 +7,7 @@ app.all('*', function(req, res, next) {
     next();
 });
 
-app.use('/api', require('./controller.js'));
+app.use('/api', require('./controllers/value.js'));
 
 const PORT = process.env.PORT || 3000;
 

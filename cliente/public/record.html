@@ -8,37 +8,35 @@
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="../styles/global.css" rel="stylesheet" />
     <title>Historial</title>
   </head>
-  
+
   <body>
+    <section class="history">
+      <a class="btn btn-historic" href="index.html">Home</a>
+      <h2>Cotización dolar oficial Noviembre 2020</h2>
+      <table class="animate__animated animate__fadeIn">
+        <thead>
+          <tr>
+            <th class="th-history">Fecha</th>
+            <th class="th-history">Compra</th>
+            <th class="th-history">Venta</th>
+          </tr>
+        </thead>
+        <tbody class="table-content"></tbody>
+      </table>
+      <button class="btn btn-historic" onclick="nextPage()">Siguiente</button>
+    </section>
 
-      <section class="history">
-          <a class="btn btn-historic" href="index.html">Home</a>
-
-        <h2>Cotización dolar oficial Noviembre 2020</h2>
-        <table class= "animate__animated animate__fadeIn">
-          <thead>
-            <tr>
-              <th class="th-history">Fecha</th>
-              <th class="th-history">Compra</th>
-              <th class="th-history">Venta</th>
-            </tr>
-          </thead>
-          <tbody class="table-content"></tbody>
-        </table>
-        <button class="btn btn-historic" onclick="nextPage()">Next</button>
-      </section>
-
-      <footer>
-        <p>Design by: Mariano Conchillo & Santino Castagno</p>
+    <footer>
+      <p>Design by: Mariano Conchillo & Santino Castagno</p>
     </footer>
-
   </body>
 
-  <script src="../scripts/script.js"></script>
+  <script src="../scripts/valueService.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </html>

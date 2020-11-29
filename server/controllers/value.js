@@ -5,7 +5,7 @@ const moment = require('moment');
 const { query, validationResult } = require('express-validator');
 
 const fs = require('fs');
-const data = require('./data.json');
+const data = require('../data/valueTest.json');
 
 //Routes
 // Get Value by ID
@@ -21,10 +21,10 @@ router.get('/value/:id',  (req, res) => {
 
 // Get values with limit and from options
 router.get('/values', [
-  query('limit').isInt({ min: 0, max: data.historic.length }),
-  query('from').isInt({ min: 0, max: data.historic.length })
+  // The rest api is limited to 100 values in each query.
+  query('limit').isInt({ min: 0, max: 100 }),
+  query('from').isInt({ min: 0, max: data.historic.length-1 })
 ], (req, res) => {
-
   const errors = validationResult(req);
   if(!errors.isEmpty()){
     return res.status(400).json({ errors: errors.array() });
@@ -32,11 +32,9 @@ router.get('/values', [
 
   const limit = req.query.limit;
   const from = req.query.from;
-
-  // res.json(data.historic.slice(from, limit).reverse());
-  res.json(data.historic.slice(data.historic.length-(from+limit), data.historic.length-from).reverse());
-  // res.json(data.historic.slice(data.historic.length-from, data.historic.length-limit));
-
+  
+  res.status(200)
+    .json(data.historic.slice(data.historic.length-(from+limit), data.historic.length-from).reverse());
 });
 
 // Create new Value
