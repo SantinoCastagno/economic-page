@@ -1,6 +1,6 @@
 # ECONOMIC-PAGE
 
-_A page to consult the price of the dollar in Argentina._
+_A page to consult the price of the dollar in Argentina (no updated)._
 
 ## Starting 🚀
 
